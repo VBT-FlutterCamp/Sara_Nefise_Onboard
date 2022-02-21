@@ -35,10 +35,14 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   kartal: ^2.3.1
+  shared_preferences: ^2.0.13
+  shared_preferences_web: ^2.0.3
+  link_text: ^0.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

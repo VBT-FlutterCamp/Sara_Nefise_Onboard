@@ -1,4 +1,4 @@
-import 'package:covid_onboard/veiw/onboard_screen_view.dart';
+import 'package:covid_onboard/feature/onboard/view/onboard_screen_view.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 

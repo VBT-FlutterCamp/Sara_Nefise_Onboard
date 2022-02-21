@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
 import '../model/Onboard_model.dart';
-import '../model/login/Login_page.dart';
+import '../../login/view/Login_page.dart';
 
 class OnBoardScreen extends StatefulWidget {
   OnBoardScreen({Key? key}) : super(key: key);
@@ -60,11 +60,12 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
   Column _buildMainText(int i, BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         SizedBox(
           child: Image.asset(models[i].image),
-          width: double.infinity,
-          height: 420.5,
+          //width: double.infinity,
+          //height: 420.5,
         ),
         Container(
           width: double.infinity,
@@ -74,10 +75,10 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
                 topRight: Radius.circular(20.0)),
             color: Color.fromARGB(255, 228, 203, 203),
           ),
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.only(right: 10, left: 10, top: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
+           // mainAxisSize: MainAxisSize.max,
             children: [
               _navigationItemsRow(),
               SizedBox(
@@ -92,9 +93,9 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
                     color: context.appTheme.primaryColor),
               ),
               SizedBox(
-                height: context.dynamicHeight(0.06),
+                height: context.dynamicHeight(0.02),
               ),
-              FittedBox(
+              FittedBox(            
                 fit: BoxFit.fill,
                 child: Text(models[i].description,
                     style: context.textTheme.bodyText2?.copyWith(
@@ -102,13 +103,13 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
                     )),
               ),
               SizedBox(
-                height: context.dynamicHeight(0.06),
+                height: context.dynamicHeight(0.08),
               ),
               _buttonPageNavigiton(context)
             ],
           ),
         ),
-        const Spacer()
+        //const Spacer()
       ],
     );
   }
