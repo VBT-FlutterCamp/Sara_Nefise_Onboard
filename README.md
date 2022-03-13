@@ -1,6 +1,5 @@
 # covid_onboard
 
-A new Flutter project.
 
  <img src="https://user-images.githubusercontent.com/47283850/154629048-5ee36cc3-f760-4fb4-aade-7a3b5be06846.PNG" width="300" height="450"> 
  <img src="https://user-images.githubusercontent.com/47283850/154629045-b9907ef6-f597-4fec-a289-d0fe8b7b3300.PNG" width="300" height="450"> 
